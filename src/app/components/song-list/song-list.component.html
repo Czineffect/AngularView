@@ -1,0 +1,21 @@
+
+<input type="text" class="form-control" (ngModelChange)="filter($event)"> 
+<table class="table table-striped" *ngIf="library"> 
+    <thead>
+        <tr>
+            <th>Album</th>
+            <th>Artist</th>
+            <th>Genre</th>
+            <th>More Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let entry of library">
+            <td>{{entry.AlbumName}}</td>
+            <td>{{entry.AlbumName}}</td>
+            <td>{{entry.AlbumName}}</td>
+            <td><button class="form-control" (click)="showAlbum(entry.AlbumID)">Open</button></td>
+        </tr>
+
+    </tbody>
+</table>

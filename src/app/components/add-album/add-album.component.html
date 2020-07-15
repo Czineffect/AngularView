@@ -1,0 +1,23 @@
+<div class="add-book">
+    <form >
+        <div class="form-group">
+            <label for="title" class="required">Title</label>
+            <input type="text" class="form-control" id="title"  placeholder="Album Name">
+        </div>
+        <div class="form-group">
+            <label for="author" class="required">Author</label>
+            <input type="text" class="form-control" id="author"  placeholder="Artist">
+        </div>
+        <div class="form-group">
+            <label for="description" class="required">Cost</label>
+            <input type="text" class="form-control" id="description" placeholder="Cost">
+        </div>
+        <div class="form-group"> 
+            <label>Release Year</label>
+            <input type="number" class="form-control" id="YearRelease" placeholder="PublishYear">
+        </div>
+
+        <button class="btn btn-success" type="submit">Add</button>
+        <button class="btn btn-default" [routerLink]="['/']">Cancel</button>
+    </form>
+    </div>
